@@ -14,6 +14,7 @@ cd ${CA_DIR}
 
 EOF
 cp pki/private/${CLIENT_NAME}.key ${KEYS_DIR}
+cp pki/private/${CLIENT_NAME}.key home/ubuntu/client-configs/keys/
 ./easyrsa sign-req client ${CLIENT_NAME} << EOF
 yes
 EOF

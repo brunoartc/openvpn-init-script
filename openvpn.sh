@@ -32,10 +32,24 @@ cp pki/ca.crt /home/ubuntu/files/
 openvpn --genkey --secret ta.key
 cp ta.key /home/ubuntu/files
 cp pki/dh.pem /home/ubuntu/files
+
 mkdir -p home/ubuntu/client-configs/keys
 chmod -R 700 home/ubuntu/client-configs
-./easyrsa gen-req client1 nopass
-cp pki/private/client1.key home/ubuntu/client-configs/keys/
+#./easyrsa gen-req client1 nopass
+#cp pki/private/client1.key home/ubuntu/client-configs/keys/
+
+
+sudo cp files/* /etc/openvpn/
+
+
+wget https://raw.githubusercontent.com/brunoartc/openvpn-init-script/master/clients.sh
+machine_ip=$(curl ifconfig.me)
+sh clients.sh database $machine_ip
+sh clients.sh serverless $machine_ip
+
+
+
+sudo systemctl restart openvpn@server
 
 
 echo Terminou
