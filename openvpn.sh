@@ -2,8 +2,8 @@
 cd /home/ubuntu
 wget -P /home/ubuntu/ https://github.com/OpenVPN/easy-rsa/releases/download/v3.0.4/EasyRSA-3.0.4.tgz
 tar xvf EasyRSA-3.0.4.tgz
-sudo apt-get update
-sudo apt-get install openvpn easy-rsa
+sudo apt-get -y update
+sudo apt-get -y install openvpn easy-rsa
 git clone https://github.com/brunoartc/cloud_database
 sudo cp cloud_database/server.conf /etc/openvpn/server.conf
 cp /etc/sysctl.conf sysctl.conf
