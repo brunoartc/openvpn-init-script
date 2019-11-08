@@ -39,7 +39,7 @@ chmod -R 700 home/ubuntu/client-configs
 #cp pki/private/client1.key home/ubuntu/client-configs/keys/
 
 
-sudo cp files/* /etc/openvpn/
+sudo cp home/ubuntu/files/* /etc/openvpn/
 
 
 wget https://raw.githubusercontent.com/brunoartc/openvpn-init-script/master/clients.sh
