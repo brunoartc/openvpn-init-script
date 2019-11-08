@@ -22,13 +22,14 @@ cp pki/issued/${CLIENT_NAME}.crt ${KEYS_DIR}
  
 echo "client
 dev tun
-proto udp
+proto tcp
 remote ${OPENVPN_SERVER} 1194
 user nobody
 group nogroup
 persist-key
 persist-tun
-cipher AES-128-CBC
+auth SHA256
+cipher AES-256-CBC
 auth SHA256
 key-direction 1
 remote-cert-tls server
