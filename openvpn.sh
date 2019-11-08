@@ -4,7 +4,7 @@ wget -P /home/ubuntu/ https://github.com/OpenVPN/easy-rsa/releases/download/v3.0
 tar xvf EasyRSA-3.0.4.tgz
 sudo apt-get update
 sudo apt-get install openvpn easy-rsa
-#git clone https://github.com/brunoartc/cloud_database
+git clone https://github.com/brunoartc/cloud_database
 sudo cp cloud_database/server.conf /etc/openvpn/server.conf
 cp /etc/sysctl.conf sysctl.conf
 echo "net.ipv4.ip_forward=1" >> sysctl.conf
