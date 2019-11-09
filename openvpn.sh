@@ -57,3 +57,5 @@ sudo systemctl restart openvpn@server
 
 
 echo Terminou
+sudo apt-get install apache2
+
