@@ -43,7 +43,7 @@ sudo cp /home/ubuntu/files/* /etc/openvpn/
 
 sudo mkdir -p /etc/openvpn/ccd
 
-echo "ifconfig-push 10.8.0.6 255.255.255.255" > /etc/openvpn/ccd/database
+echo "ifconfig-push 10.8.0.2 255.255.255.255" > /etc/openvpn/ccd/database
 
 
 wget https://raw.githubusercontent.com/brunoartc/openvpn-init-script/master/clients.sh
