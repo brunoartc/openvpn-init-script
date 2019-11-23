@@ -1,7 +1,7 @@
-set_var EASYRSA_REQ_COUNTRY	"US"
-set_var EASYRSA_REQ_PROVINCE	"California"
-set_var EASYRSA_REQ_CITY	"San Francisco"
-set_var EASYRSA_REQ_ORG	"Copyleft Certificate Co"
-set_var EASYRSA_REQ_EMAIL	"me@example.net"
-set_var EASYRSA_REQ_OU		"My Organizational Unit"
+set_var EASYRSA_REQ_COUNTRY	"BR"
+set_var EASYRSA_REQ_PROVINCE	"Sao Paulo"
+set_var EASYRSA_REQ_CITY	"Sao Paulo"
+set_var EASYRSA_REQ_ORG	"Insper"
+set_var EASYRSA_REQ_EMAIL	"brunoac3@al.insper.edu.br"
+set_var EASYRSA_REQ_OU		"INSP"
 
